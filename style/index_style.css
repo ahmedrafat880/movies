@@ -1,0 +1,130 @@
+body {
+    background-color: #000000f2;
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.searchDiv input {
+    background-color: #000000f2;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    outline: none;
+    color: gray;
+    width: 40%;
+    height: 40px;
+}
+.rightNav {
+    position: fixed;
+    top: 0;
+    left:0px;
+    width: 60px;
+    height: 100vh;
+    background-color: #f8f6f6;
+    z-index: 2;
+    transition: 0.5s;
+}
+.rightNav .logo {
+    display: flex;
+    padding: 10px 0;
+}
+.rightNav .logo img {
+    height: 48px;
+    margin: auto;
+}
+.rightNav .menu {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.rightNav .downMenu1 {
+    position: absolute;
+    top: 88%;
+    cursor: pointer;
+    
+}
+.rightNav .downMenu2 {
+    position: absolute;
+    top: 95%;
+    cursor: pointer;
+}
+.leftNav {
+    position: fixed;
+    top: 0;
+    left:-250px;
+    width: 250px;
+    height: 100vh;
+    z-index: 1;
+    background-color: #000000f2;
+    transition: 0.5s;
+}
+.leftNav .menu ul {
+    margin-top: 50px;
+    color: white;
+}
+.leftNav .menu ul li {
+    padding-top: 1000px;
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.leftNav .menu ul li:hover {
+    color: tomato;
+}
+.contact a {
+    transition: 1s;
+}
+.contact a:hover {
+    color: tomato !important;
+}
+.socialMedia {
+    position: absolute;
+    width: 250px;
+    bottom: 60px;
+    left: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.copyRights {
+    position: absolute;
+    bottom: 5px;
+    width: 250px;
+    color: white;
+    text-align: center;
+}
+.showBtn {
+    display: block;
+    transition: 0.5s;
+}
+.closeBtn {
+    display: none;
+    transition: 0.5s;
+}
+.imageOuter {
+    position: relative;
+    overflow: hidden;
+}
+.imageOuter .description {
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right:0;
+    transition: 0.5s;
+}
+.imageOuter .description .details {
+    position: absolute;
+    top: 50%;
+}
+.imageOuter:hover .description {
+    top:0;
+}
+footer .container input {
+    background-color: #000000f2;
+}
